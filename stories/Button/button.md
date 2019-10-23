@@ -1,8 +1,9 @@
 # Button
 ## Importacion
 ```js
-import { Button } from '???'
-```
+import { Button } from '???';
+``````
+<!-- STORY -->  
 ## Uso
 ```js
 const Wrapper = () => {
@@ -12,5 +13,3 @@ const Wrapper = () => {
         </>
     );
 }
-```
-<!-- STORY -->
