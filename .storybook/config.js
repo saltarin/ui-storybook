@@ -9,7 +9,4 @@ setOptions({
 
 const req = require.context('../stories/', true, /story.tsx$/);
 
-const loadStories = () => {
-    req.keys().forEach((filename) => req(filename))
-} 
-configure(loadStories, module);
+configure(req, module);

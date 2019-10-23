@@ -1,19 +1,17 @@
 import * as React from 'react';
 import { Button } from '../../src/components/Button';
-import * as readme from './button.md';
+import readme from './button.md';
 import { withDocs } from 'storybook-readme';
 
 const Wrapper = () => {
     return (
-        <>
+        <div>
             <Button name="Click!"/>
-        </>
+        </div>
     );
 }
 
-export default () => {
-    return withDocs(
-        readme,
-        () => <Wrapper/>
-    )
-}
+export default () => withDocs(
+    readme,
+    () => <Wrapper/>
+)
