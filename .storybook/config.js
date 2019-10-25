@@ -7,15 +7,12 @@ setOptions({
     showAddonPanel: true,
     hierarchyRootSeparator: /\//
 });
-
 addParameters({
     readme: {
         codeTheme: 'atom-dark'
     }
 })
-
 addDecorator(addReadme);
-
 const req = require.context('../stories/', true, /story.tsx$/);
 
 configure(req, module);
